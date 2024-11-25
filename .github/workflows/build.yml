@@ -26,7 +26,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: devopsworks/golang-upx
+          images: devopsworks/kubegcp
           tags: |
             type=raw,value=latest
             type=ref,event=tag
