@@ -15,7 +15,7 @@ docker run -it --rm --name remote-elastic \
   -v ~/.kube:/.kube/:ro \
   -v ~/.config/gcloud:/.config/gcloud/:ro \
   devopsworks/kubegcp \
-  port-forward -n mypromanv2 svc/elasticsearch 9200:9200 --context proman-staging-v2 --address='0.0.0.0'
+  port-forward -n MY-NAMESPACE svc/elasticsearch 9200:9200 --context MY-KUBE-CONTEXT --address='0.0.0.0'
 ```
 
 ## TODO
